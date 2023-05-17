@@ -1,0 +1,104 @@
+.pac-container {
+    padding: 8px;
+    transform: translateY(8px);
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px rgba(212, 206, 210, 0.25);
+    border-top: none;
+}
+
+.pac-container .pac-item {
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.pac-container .pac-item:hover {
+    border-radius: 4px;
+}
+
+.pac-container .pac-item .pac-icon {
+    display: none;
+}
+
+.pac-container .pac-item .pac-item-query+span {
+    display: block;
+    line-height: 12px;
+    font-size: 10px;
+}
+.gmnoprint{
+    bottom: auto !important;
+    top: 22px;
+    right: 54px !important;
+}
+.gmnoprint a, .gmnoprint span {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+
+.gmnoprint div[draggable="false"] {
+    box-shadow: none !important;
+    width: auto !important;
+    height: auto !important;
+    gap: 4px;
+    flex-direction: column;
+    display: flex;
+}
+.gmnoprint div[draggable="false"] button{
+    width: 32px !important;
+    height: 32px !important;
+    background: var(--default-interface-gray-400) !important;
+    box-shadow: 0px 4px 16px rgba(212, 206, 210, 0.25);
+    border-radius: 24px;
+}
+@media only screen and (max-width: 768px){
+    .gmnoprint{
+        top: 8px;
+        right: 42px !important;
+    }
+}
+.gmnoprint div[draggable="false"] button img{
+    display: none !important;
+}
+
+.gmnoprint div[draggable="false"] button::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+}
+
+.gmnoprint div[draggable="false"] button:first-of-type::after{
+    background-image: url('/src/assets/images/icons/plus.svg');
+}
+.gmnoprint div[draggable="false"] button:last-of-type::after{
+    background-image: url('/src/assets/images/icons/minus.svg');
+}
+
+.gmnoprint div[draggable="false"] button:hover{
+    background: var(--default-interface-gray-500) !important;
+}
+
+       
+
+
+.gm-style-cc:last-child {
+    display: none !important;
+}
+a[title="Report errors in the road map or imagery to Google"] {
+    display: none !important;
+}
+.map-container img[src*="es-heroku.s3"]{
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--default-interface-white) !important;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 8px rgba(212, 206, 210, 0.15));
+}

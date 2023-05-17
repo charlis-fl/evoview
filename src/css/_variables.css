@@ -1,0 +1,86 @@
+/**
+ * Do not edit directly
+ * Generated on Thu, 02 Feb 2023 13:29:16 GMT
+ */
+
+ :root {
+    --default-interface-white: #ffffff;
+    --default-interface-navy-100: #4d4d80;
+    --default-interface-navy-300: #3d3d66;
+    --default-interface-navy-400: #1e1e32;
+    --default-interface-navy-500: #0f0f19;
+    --default-interface-navy-700: #08080d;
+    --default-interface-indigo-100: #bdbdef;
+    --default-interface-indigo-300: #9c9ce7;
+    --default-interface-indigo-400: #5b5bd8;
+    --default-interface-indigo-500: #3d3dc2;
+    --default-interface-indigo-700: #22226d;
+    --default-interface-sky-100: #d6deff;
+    --default-interface-sky-300: #c2ceff;
+    --default-interface-sky-400: #99adff;
+    --default-interface-sky-500: #3c72ff;
+    --default-interface-sky-700: #18234e;
+    --default-interface-apricot-100: #f9dfd7;
+    --default-interface-apricot-300: #f4c2b3;
+    --default-interface-apricot-400: #efa48e;
+    --default-interface-apricot-500: #e46843;
+    --default-interface-apricot-700: #582313;
+    --default-interface-mint-100: #d2efe6;
+    --default-interface-mint-300: #b4e4d6;
+    --default-interface-mint-400: #96d9c5;
+    --default-interface-mint-500: #64d2b1;
+    --default-interface-mint-700: #20463b;
+    --default-interface-pistachio-100: #e8eab4;
+    --default-interface-pistachio-300: #dfe094;
+    --default-interface-pistachio-400: #d6d876;
+    --default-interface-pistachio-500: #ccc640;
+    --default-interface-pistachio-700: #3e3f17;
+    --default-interface-gray-100: #f8f7f7;
+    --default-interface-gray-300: #ece9eb;
+    --default-interface-gray-400: #e5e1e3;
+    --default-interface-gray-500: #d4ced2;
+    --default-interface-gray-700: #3c3434;
+    --default-brand-navy: #1e1e32;
+    --default-brand-navy-light: #565665;
+    --default-brand-indigo: #5b5bd8;
+    --default-brand-indigo-light: #9d9de8;
+    --default-brand-sky: #99adff;
+    --default-brand-sky-light: #c2ceff;
+    --default-brand-apricot: #efa48e;
+    --default-brand-apricot-light: #f5c8bb;
+    --default-brand-off-white: #f2f0f0;
+    --default-brand-white: #ffffff;
+    --default-large-shadow: [object Object];
+    --default-shadow-10: [object Object];
+    --default-shadow-20: [object Object];
+    --default-shadow-30: [object Object];
+    --default-font-families-dm-sans: DM Sans;
+    --default-font-families-feijoa-display: Feijoa Display;
+    --default-line-heights-0: 20;
+    --default-line-heights-1: 24;
+    --default-line-heights-2: 16;
+    --default-line-heights-3: 12;
+    --default-line-heights-4: 32;
+    --default-line-heights-5: 40;
+    --default-line-heights-6: 56;
+    --default-font-weights-dm-sans-0: Regular;
+    --default-font-weights-dm-sans-1: Bold;
+    --default-font-weights-dm-sans-2: Medium;
+    --default-font-weights-feijoa-display-3: Regular;
+    --default-font-size-0: 10;
+    --default-font-size-1: 12;
+    --default-font-size-2: 14;
+    --default-font-size-3: 16;
+    --default-font-size-4: 18;
+    --default-font-size-5: 24;
+    --default-font-size-6: 32;
+    --default-font-size-7: 48;
+    --default-letter-spacing-0: -1%;
+    --default-letter-spacing-1: 0%;
+    --default-letter-spacing-2: -2%;
+    --default-letter-spacing-3: -3%;
+    --default-paragraph-spacing-0: 0;
+    --default-paragraph-spacing-1: 8;
+    --default-brand-purple: #BF40BF;
+  }
+  
