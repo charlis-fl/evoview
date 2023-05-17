@@ -1,14 +1,13 @@
 import React, { memo, Suspense } from 'react';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
-import Loader from 'common/designSystem/loader';
 const Intro = React.lazy(() => import('./intro'));
 
 const WebRoutes = () => {
   return (
-    <Suspense fallback={<Loader />}>
+    <Suspense fallback={<div>Loading...</div>}>
       <Router>
         <Routes>
-          <Route path={'/intro'} element={<Intro />} />
+          <Route path="/" element={<Intro />} />
         </Routes>
       </Router>
     </Suspense>

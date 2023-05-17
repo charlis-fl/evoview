@@ -1,11 +1,8 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import runtimeEnv from '@mars/heroku-js-runtime-env';
 
-const { REACT_APP_API_URL, REACT_APP_GOOGLE_MAPS_API_KEY } = runtimeEnv();
+const REACT_APP_API_URL = 'https://api.opentreeoflife.org';
 
-export const apiRootUrl = `${REACT_APP_API_URL}/api/v1`;
-export const mapAPIKey = `${REACT_APP_GOOGLE_MAPS_API_KEY}`;
+export const apiRootUrl = `${REACT_APP_API_URL}/v3`;
 
-// RTK Query
-
-export const signInUrl = '/login';
+// TREE OF LIFE ENDPOINTS
+export const treeInfo = '/tree_of_life/subtree';

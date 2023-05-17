@@ -5,7 +5,7 @@ export type AppState = {
 }
 
 const initialUserState = {
-  header: ''
+  header: '',
 };
 
 const initialState: AppState = {

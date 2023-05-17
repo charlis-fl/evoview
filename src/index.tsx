@@ -1,12 +1,8 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import runtimeEnv from '@mars/heroku-js-runtime-env';
 import App from './app';
 import reportWebVitals from './reportWebVitals';
-
-// eslint-disable-next-line @typescript-eslint/naming-convention
-const { REACT_APP_SHOULD_RUN_MSW } = runtimeEnv();
 
 const container = document.getElementById('root');
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
