@@ -1,25 +1,26 @@
-import { useEffectOnce } from 'common/hooks/useEffectOnce';
-import { HomeLayout } from './HomeLayout';
-import { useGetTreeInfoMutation } from './TreeofLifeService';
-import { TreeResponse, TreeRequest } from './types';
+import { useNavigate } from 'react-router-dom';
+import { useAppSelector } from 'common/hooks/state';
+import lang from 'common/lang';
+import Elemental from 'common/designSystem/elemental';
+import Loader from 'common/designSystem/loader';
+import cellularOrganismsImage from 'assets/images/origin-image.jpg';
+import { IntroLayout } from './IntroLayout';
 
 const Home = () => {
-  const [genesisAPI] = useGetTreeInfoMutation();
-  useEffectOnce(() => {
-    const formData: TreeRequest = {
-      ott_id: 93302,
-      height_limit: 1,
-      format: 'arguson',
-    };
-    genesisAPI(formData)
-      .unwrap()
-      .then((res: TreeResponse) => {
-      });
-  });
+  const navigate = useNavigate();
+  const isAPILoading = useAppSelector((state) => Object.values(state.api.mutations).some((mutation) => mutation && mutation.status === 'pending'));
+  const { common } = lang;
+  const getBasicLifeForms = () => {
+    navigate('/93302');
+  };
   return (
-    <HomeLayout>
-      intro
-    </HomeLayout>
+    <IntroLayout>
+      {isAPILoading ? <Loader /> : (
+        <div className="intro-container">
+          <Elemental showDetails={true} src={cellularOrganismsImage} ottId={1} info={common.originName} details={common.originDetails} onClick={() => getBasicLifeForms()} />
+        </div>
+      )}
+    </IntroLayout>
   );
 };
 

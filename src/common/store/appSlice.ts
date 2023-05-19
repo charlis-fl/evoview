@@ -1,15 +1,16 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { ElementalData } from 'features/intro/types';
 
 export type AppState = {
   header: string;
+  currentDepth: number;
+  currentTreeChildren: Array<ElementalData>;
 }
-
-const initialUserState = {
-  header: '',
-};
 
 const initialState: AppState = {
   header: '',
+  currentDepth: 0,
+  currentTreeChildren: [],
 };
 
 export const appSlice = createSlice({
@@ -19,11 +20,15 @@ export const appSlice = createSlice({
     setHeader: (state, { payload }: PayloadAction<string>) => {
       state.header = payload;
     },
+    setCurrentTreeChildren: (state, { payload }: PayloadAction<Array<ElementalData>>) => {
+      state.currentTreeChildren = payload;
+    },
   },
 });
 
 export const {
   setHeader,
+  setCurrentTreeChildren,
 } = appSlice.actions;
 
 export default appSlice.reducer;

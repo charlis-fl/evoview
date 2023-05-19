@@ -1,9 +1,10 @@
-const homePage = {
-  heading: 'First, let’s create your account',
+const common = {
+  originName: 'Cellular Organisms',
+  originDetails: 'The cell is the basic structural and functional unit of life forms.',
 };
 
 export const lang = {
-  homePage,
+  common,
 };
 
 export default lang;
